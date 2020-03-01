@@ -1,4 +1,4 @@
-GREETING CARDS ARE UNDERRATED
+# GREETING CARDS ARE UNDERRATED
 
 ## Description
 GREETING CARDS ARE UNDERRATED is a responsive and interactive web page. It might seem, at first, that you're going to obtain an inspirational quote card, but really you'll be receiving a random "Fuck you" "greeting card" with different designs containing names of a sender and receiver of said card. It also contains an interactive game that displays random "Fuck you" phrases. Info obtained from https://www.foaas.com
