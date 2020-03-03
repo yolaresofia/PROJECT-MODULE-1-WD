@@ -48,12 +48,7 @@
     z-index:15;
     display: none;
 }
-
-.good-illustration {
-    z-index: 2;
-    position: relative;
-}
-
+/*input p muy importante*/
 p.frase-tag-p {
     font-size: 2em;
     height: auto;
@@ -65,13 +60,33 @@ p.frase-tag-p {
     margin-top: -50px;
 } 
 
+.logo-gcau-svg {
+    display: flex;
+    height: 500px;
+}
+
+.good-illustration-mobile{
+    display: none;
+ }
+ 
+ @media only screen and (max-width: 600px){           
+     
+    .good-illustration{
+      display: none;
+    }
+ 
+    .good-illustration-mobile {
+      display: block;
+    }
+ }
 /*about*/
+
 .about-GCAU {
     background-color: rgb(57, 255, 20);
 }
 
-.logo-gcau {
-    margin-top: 8%;
+a .logo-gcau {
+    margin-top: 10%;
     width: 40%;
 }
 

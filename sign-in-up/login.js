@@ -17,24 +17,28 @@ let checkUser = () => {
     })
     return counter === 1 ? true : false
 }
+
 let errorUser = () => {
     let div = document.createElement("div")
-    div.innerHTML = " Incorrect user name or password "
+    div.innerHTML = "Wrong. Try again you memoryless fuck."
     div.setAttribute("class", "error")
     form.appendChild(div)
 }
+
 let deleteErrors = () => {
     errors = [...document.getElementsByClassName("error")]
     for (i = 0; i < errors.length; i++) {
         errors[i].remove()
     }
 }
+
 let validationMessage = () => {
     let div = document.createElement("div")
     div.innerHTML = `<p class="info-text" href="game.html"> Hello ${userName.value}! <a class="info-text" href="game.html"> You can now tell people to fuck off with a card! </a></p>`
     form.insertBefore(div, logInButton);
     logInButton.remove()
 }
+
 let mainLogIn = () => {
     event.preventDefault()
     if (!checkUser()) {

@@ -1,35 +1,49 @@
+
 body {
     font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
     background: pink;
     color: #fff;
   }
-  
-  .container {
-    width: 80%;
-    max-width: 500px;
-    margin-top: 20%;
-    margin-bottom: 40%;
+
+
+  .main-forms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
   }
-  
+
+  .form-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  #name {
+    border: 0px;
+    border-bottom: 1px solid white;
+    background-color: pink;
+    padding: 0;
+  }
   
   #password {
-    border-bottom: 1px solid white;
-    background-color: pink;
-    padding: 0;
-  }
-  #email {
-    border-bottom: 1px solid white;
-    background-color: pink;
-    padding: 0;
-  }
-  
-  #last-name {
+    border: 0px;
     border-bottom: 1px solid white;
     background-color: pink;
     padding: 0;
   }
 
-  #first-name {
+  #repeat-password {
+    border: 0px;
+    border-bottom: 1px solid white;
+    background-color: pink;
+    padding: 0;
+  }
+
+  #email {
+    border: 0px;
     border-bottom: 1px solid white;
     background-color: pink;
     padding: 0;
