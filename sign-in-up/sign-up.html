@@ -20,10 +20,10 @@
         </button>
         <ul class="navbar-nav mt-2 mt-lg-0 col-lg-12 justify-content-around">
             <li class="nav-item">
-                <a class="nav-link" href="about.html">ABOUT</a>
+                <a class="nav-link" href="/about/about.html">ABOUT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="archive.html">ARCHIVE</a>
+                <a class="nav-link" href="/archive/archive.html">ARCHIVE</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -36,35 +36,34 @@
                 </div>
             </li>
         </ul>
-        </nav>
-    <main>
-        <div class="container">
-            <form>
-              <ul class="flex-outer">
-                <li>
-                  <label for="first-name">First Name</label>
-                  <input type="text" id="first-name" placeholder="GIVE ME YOUR DATA">
-                </li>
-                <li>
-                  <label for="last-name">Last Name</label>
-                  <input type="text" id="last-name" placeholder="GIVE ME YOUR DATA">
-                </li>
-                <li>
-                  <label for="email">Email</label>
-                  <input type="email" id="email" placeholder="GIVE ME YOUR DATA">
-                </li>
-                <li>
-                  <label for="password">Password</label>
-                  <input type="password" id="password" placeholder="*****">
-                </li>
-                <li>
-                <li>
-                  <button type="submit">Sign up</button>
-                </li>
-              </ul>
+    </nav>
+    <main class="main-forms">
+        <section>
+    
+          <h2>Regístrate!</h2>
+    
+          <div class="form-wrapper">
+    
+            <form class="signup-form" id="signup-form" action="">
+    
+              <input type="text" id="name" placeholder="GIVE ME YOUR DATA" autocomplete="off" required />
+              <input type="email" id="email" placeholder="GIVE ME YOUR DATA" autocomplete="off" required />
+              <input type="password" id="password" placeholder="******" autocomplete="off" required />
+              <input type="password" id="repeat-password" placeholder="******" autocomplete="off" required />
+    
+              <button type="submit" class="button" id="signup-button" >SIGN THE FUCK UP</button>
             </form>
+    
+            <div class="errors-container"></div>
           </div>
-    </main>
+    
+        </section>
+      </main>
+      
+
+    <script src="/sign-in-up/user.js"></script>
+    <script src="/sign-in-up/validator.js"></script>
+    <script src="/sign-in-up/signup.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>

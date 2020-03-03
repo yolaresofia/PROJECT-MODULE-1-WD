@@ -54,7 +54,7 @@
     position: relative;
 }
 
-/* p {
+p.frase-tag-p {
     font-size: 2em;
     height: auto;
     width: 40%;
@@ -63,7 +63,7 @@
     margin-left: -50px;
     top: 30%;
     margin-top: -50px;
-} */
+} 
 
 /*about*/
 .about-GCAU {
