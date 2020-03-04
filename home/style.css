@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+
 #body {
     background-color: pink;
 }
@@ -15,15 +18,17 @@
 /*main content*/
 .sender-receiver {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: baseline;
 }
+
 .sender {
     margin-right: 50px;
     border: none;
     background-color: pink;
     border-bottom: 1px solid white;
 }
+
 .receiver {
     margin-right: 50px;
     border: none;
@@ -31,10 +36,18 @@
     border-bottom: 1px solid white;
 }
 
+p {
+    margin-bottom: 0px;
+    padding: 0px;
+    font-style: Josefin Sans;
+}
+
+
+
 .img-random {
     width: 40%;
     left: 30%;
-    display: none;
+    /* display: none; */
 }
 
 .close-button {
@@ -65,21 +78,13 @@ p.frase-tag-p {
     top: 250px;
 } 
 
-.good-illustration-mobile{
+
+
+
+
+ .good-illustration-mobile{
     display: none;
  }
- 
- @media only screen and (max-width: 600px){           
-     
-    .good-illustration{
-      display: none;
-    }
- 
-    .good-illustration-mobile {
-      display: block;
-    }
- }
-
 
 /*about*/
 
@@ -161,3 +166,15 @@ a .logo-gcau {
         grid-auto-flow: column;
         grid-auto-columns: minmax(min-content, 80px);
     } */
+
+    @media only screen and (max-width: 600px){           
+     
+        .good-illustration{
+          display: none;
+        }
+     
+        .good-illustration-mobile {
+          display: block;
+        }
+     } 
+    

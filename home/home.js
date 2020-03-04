@@ -5,12 +5,13 @@ var arrOne = ['asshole', 'awesome', 'bag', 'because', 'bucket', 'bye', 'cool', '
 var arrOnePos = Math.floor(Math.random() * arrOne.length);
 var randomPos = arrOne[arrOnePos];
 var gato = document.querySelectorAll('.gato');
-var conejo = document.querySelector('.conejitos');
+var conejo = document.querySelectorAll('.conejitos');
 var closeButton = document.querySelector('.close-button');
 var randomImg = document.querySelector('.img-random');
 let finalReceiver, finalSender, arrayOfFrases, lengthArray;
 let inp = document.querySelectorAll('input');
 
+let allConejos = [...conejo];
 
 
 
@@ -54,14 +55,17 @@ var getFrase = async () => {
     receiver.value = ''
     var getFraseRaw = arrayOfFrases[Math.floor(Math.random() * lengthArray)];
     console.log(getFraseRaw);
-    let testFrase = document.createElement('p');
-    testFrase.classList.add('frase-tag-p');
-    testFrase.innerText = getFraseRaw;
-    conejo.appendChild(testFrase);
-    let randomNum = Math.floor(Math.random() * 6 + 1);
-    randomImg.src = `imagenes/fotos-de-tarjetas-0${randomNum}.png`
-    randomImg.style.display = 'inline';
-    closeButton.style.display = 'inline';
+    allConejos.forEach(conejo => {
+        let testFrase = document.createElement('p');
+        testFrase.classList.add('frase-tag-p');
+        testFrase.innerText = getFraseRaw;
+        conejo.appendChild(testFrase);
+        console.log(conejo)
+        let randomNum = Math.floor(Math.random() * 6 + 1);
+        randomImg.src = `imagenes/fotos-de-tarjetas-0${randomNum}.png`
+        randomImg.style.display = 'inline';
+        closeButton.style.display = 'inline';
+    });
     return getFraseRaw;
 };
 
