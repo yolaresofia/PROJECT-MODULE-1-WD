@@ -45,7 +45,6 @@ function getValues() {
     finalSender = sender.value
     arrayOfFrases = [`Fuck you, asshole. -${finalSender}`, `This is Fucking Awesome. -${finalSender}`, `${finalReceiver} back the fuck off. -${finalSender}`, `Happy fucking birthday, ${finalReceiver} -${finalSender}`, `Why? Because Fuck you, that's why. -${sender.value}`, `How about a nice cup of shut the fuck up? -${finalSender}`, `Everyone can go and fuck off. -${finalSender}`];
     lengthArray = arrayOfFrases.length - 1;
-    console.log('***********', finalReceiver, finalSender);
 }
 
 //random frase
@@ -69,8 +68,12 @@ var getFrase = async () => {
     return getFraseRaw;
 };
 
-
-
+var gato1 = document.getElementsByClassName('gato1')[0];
+gato1.onclick = showImg
+function showImg() {
+    randomImg.style.display = 'inline';
+    closeButton.style.display = 'inline';
+}
 
 //onclick me da la frase
 [...gato].forEach(function (element) {

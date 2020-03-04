@@ -47,7 +47,7 @@ p {
 .img-random {
     width: 40%;
     left: 30%;
-    /* display: none; */
+    display: none; 
 }
 
 .close-button {
