@@ -1,17 +1,21 @@
 var frase = document.getElementById('frase');
-var receiver = document.querySelector('.receiver').value;
+var receiver = document.querySelector('.receiver');
+var sender = document.querySelector('.sender');
 var arrOne = ['asshole', 'awesome', 'bag', 'because', 'bucket', 'bye', 'cool', 'cup', 'diabetes', 'even', 'anyone', 'anything', 'family', 'fascinating', 'flying', 'give', 'holygrail', 'horse', 'idea', 'immensity', 'jinglebells', 'life', 'logs', 'looking', 'maybe', 'me', 'mornin', 'no', 'pink', 'programmer', 'question', 'shit', 'single', 'thanks', 'that', 'this', 'too', 'what', 'zero'];
 var arrOnePos = Math.floor(Math.random() * arrOne.length);
-var sender = document.querySelector('.sender').value;
-var randomPos = arrOne[arrOnePos]
+var randomPos = arrOne[arrOnePos];
 var gato = document.querySelectorAll('.gato');
 var conejo = document.querySelector('.conejitos');
 var closeButton = document.querySelector('.close-button');
 var randomImg = document.querySelector('.img-random');
-var arrayOfFrases = [`Fuck you, asshole. -${sender}`, `This is Fucking Awesome. -${sender}`, `${receiver} back the fuck off. -${sender}`, `Happy fucking birthday, ${receiver} -${sender}`, `Why? Because Fuck you, that's why. -${sender}`, `How about a nice cup of shut the fuck up? -${sender}`, `Everyone can go and fuck off. -${sender}`];
-var lengthArray = arrayOfFrases.length - 1;
+let finalReceiver, finalSender, arrayOfFrases, lengthArray;
+let inp = document.querySelectorAll('input');
 
 
+
+
+
+//var rawFonts = ('https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyALN15CEmX5LpdtZyPKYa06Vf63Atm5sXg')
 
 // //MUY IMPORTANTE FUNCION REAL LPM
 // var getFrase = async () => {
@@ -35,10 +39,19 @@ var lengthArray = arrayOfFrases.length - 1;
 //     console.log(getFraseRaw.message + ' ' + getFraseRaw.subtitle);
 // };
 
-
+function getValues() {
+    finalReceiver = receiver.value
+    finalSender = sender.value
+    arrayOfFrases = [`Fuck you, asshole. -${finalSender}`, `This is Fucking Awesome. -${finalSender}`, `${finalReceiver} back the fuck off. -${finalSender}`, `Happy fucking birthday, ${finalReceiver} -${finalSender}`, `Why? Because Fuck you, that's why. -${sender.value}`, `How about a nice cup of shut the fuck up? -${finalSender}`, `Everyone can go and fuck off. -${finalSender}`];
+    lengthArray = arrayOfFrases.length - 1;
+    console.log('***********', finalReceiver, finalSender);
+}
 
 //random frase
 var getFrase = async () => {
+    getValues();
+    sender.value = '';
+    receiver.value = ''
     var getFraseRaw = arrayOfFrases[Math.floor(Math.random() * lengthArray)];
     console.log(getFraseRaw);
     let testFrase = document.createElement('p');
@@ -46,7 +59,6 @@ var getFrase = async () => {
     testFrase.innerText = getFraseRaw;
     conejo.appendChild(testFrase);
     let randomNum = Math.floor(Math.random() * 6 + 1);
-    console.log(randomNum);
     randomImg.src = `imagenes/fotos-de-tarjetas-0${randomNum}.png`
     randomImg.style.display = 'inline';
     closeButton.style.display = 'inline';

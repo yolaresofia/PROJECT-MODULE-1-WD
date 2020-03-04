@@ -2,6 +2,10 @@
     background-color: pink;
 }
 
+.navbar {
+    color: black;
+}
+
 /* .gato {
     animation:rotate 20s linear alternate-reverse infinite; 
         stroke: red;
@@ -12,7 +16,7 @@
 .sender-receiver {
     display: flex;
     align-items: center;
-    margin-left: 400px;
+    justify-content: center;
 }
 .sender {
     margin-right: 50px;
@@ -26,44 +30,40 @@
     background-color: pink;
     border-bottom: 1px solid white;
 }
+
 .img-random {
-    height: auto;
     width: 40%;
-    position: absolute;
-    left: 35%;
-    margin-left: -50px;
-    top: 15%;
-    margin-top: -50px;
+    left: 30%;
     display: none;
 }
 
 .close-button {
-    height: auto;
     width: 3%;
-    position: absolute;
-    left: 72%;
-    margin-left: -50px;
-    top: 15%;
-    margin-top: -50px;
+    left: 67%;
     z-index:15;
     display: none;
 }
-/*input p muy importante*/
+
+.imagenes-centrar {
+    height: auto;
+    position: absolute;
+    top: 50px;
+}
+
+.conejitos {
+    position: relative;
+}
+
+
 p.frase-tag-p {
+    text-align: center;
     font-size: 2em;
     height: auto;
-    width: 40%;
+    width: 200px;
     position: absolute;
-    left: 45%;
-    margin-left: -50px;
-    top: 30%;
-    margin-top: -50px;
+    left: 42%;
+    top: 250px;
 } 
-
-.logo-gcau-svg {
-    display: flex;
-    height: 500px;
-}
 
 .good-illustration-mobile{
     display: none;
@@ -79,6 +79,8 @@ p.frase-tag-p {
       display: block;
     }
  }
+
+
 /*about*/
 
 .about-GCAU {
@@ -111,21 +113,22 @@ a .logo-gcau {
 /*archive*/
 
 .archive-body {
-    background-color: blue;
+    background-color: pink;
 }
-
-.section-archive {
-    display: flex;
-}
-
 .container-imagenes {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 200px;
 }
 
-.imagen1, .imagen2, .imagen3, .imagen4, .imagen5, .imagen6 {
-   width: 30%;
+.imagen {
+   margin-top: 50px;
    margin-left: 5%;
    margin-right: 5%;
+   max-width: 300px;
 }
 
 /*archive*/
