@@ -10,7 +10,7 @@ var closeButton = document.querySelector('.close-button');
 var randomImg = document.querySelector('.img-random');
 let finalReceiver, finalSender, arrayOfFrases, lengthArray;
 let inp = document.querySelectorAll('input');
-
+var randomImg2 = document.querySelector('.img-random2');
 let allConejos = [...conejo];
 
 
@@ -45,7 +45,6 @@ function getValues() {
     finalSender = sender.value
     arrayOfFrases = [`Fuck you, asshole. -${finalSender}`, `This is Fucking Awesome. -${finalSender}`, `${finalReceiver} back the fuck off. -${finalSender}`, `Happy fucking birthday, ${finalReceiver} -${finalSender}`, `Why? Because Fuck you, that's why. -${sender.value}`, `How about a nice cup of shut the fuck up? -${finalSender}`, `Everyone can go and fuck off. -${finalSender}`];
     lengthArray = arrayOfFrases.length - 1;
-    console.log('***********', finalReceiver, finalSender);
 }
 
 let testFrase = null;
@@ -59,6 +58,7 @@ var getFrase = async () => {
     if(testFrase === null) {
         console.log('createdp')
         testFrase = document.createElement('p');
+        testFrase.style.display = 'inline';
     } else {
         console.log('deletedp')
         testFrase.remove()
@@ -77,8 +77,13 @@ var getFrase = async () => {
     return getFraseRaw;
 };
 
-
-
+var gato1 = document.getElementsByClassName('gato1')[0];
+gato1.onclick = showImg
+function showImg() {
+    randomImg2.style.display = 'inline';
+    closeButton.style.display = 'inline';
+    console.log("click en gato1");
+}
 
 //onclick me da la frase
 [...gato].forEach(function (element) {
@@ -92,8 +97,9 @@ function hideElements() {
     randomImg.style.display = 'none';
     closeButton.style.display = 'none';
     for (i = 0; i < allp.length; i++) {
-        allp[i].style.display = 'none';
+        allp[i].remove();
     }
 }
 
 closeButton.addEventListener('click', hideElements);
+

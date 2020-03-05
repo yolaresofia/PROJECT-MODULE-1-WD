@@ -4,11 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-
 	<!-- bootstrap 4 css -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="./CSS/style.css">
 
 	<title>GREETING CARDS ARE UNDERRATED</title>
 </head>
@@ -32,64 +31,46 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item mx-5 px-5">
-                  <a class="nav-link" href="../home/index.html">
+                  <a class="nav-link" href="./index.html">
                     HOME
                   </a>
                 </li>
                 <li class="nav-item mx-5 px-4">
-                  <a class="nav-link" href="../about/about.html">
+                  <a class="nav-link" href="./HTML/about.html">
                     ABOUT
                   </a>
                 </li>
                 <li class="nav-item mx-5 px-4">
-                  <a class="nav-link" href="../archive/archive.html">ARCHIVE</a>
+                  <a class="nav-link" href="./HTML/archive.html">ARCHIVE</a>
                 </li>
                 <li class="nav-item mx-5 px-4">
-                  <a class="nav-link" href="/sign-in-up/sign-up.html">
+                  <a class="nav-link" href="./HTML/sign-up.html">
                     SIGN UP
                   </a>
                 </li>
                 <li class="nav-item mx-5 px-4">
-                  <a class="nav-link" href="/sign-in-up/log-in.html">LOG IN</a>
+                  <a class="nav-link" href="./HTML/log-in.html">LOG IN</a>
                 </li>
               </ul>
             </div>
           </nav>
 		<section>
-			<div class="logo-en-svg">
-				<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 597.14 381.43">
-					<title>Untitled-2</title><text transform="translate(50.85 146.13)"
-						style="font-size:51.47450637817383px;fill:#fff;font-family:BigCaslon-Medium, Big Caslon">GREETING
-						CARDS<tspan x="195.01" y="43.87">ARE</tspan>
-						<tspan x="50.29" y="87.74">UNDERRATED</tspan>
-					</text><text transform="translate(51.69 146.13)"
-						style="opacity:0.73;font-size:56.446475982666016px;stroke:#000;stroke-miterlimit:10;stroke-width:0.5px;font-family:GiddyupStd, Giddyup Std;letter-spacing:0.04700595150199988em">GREE
-						<tspan x="146.53" y="0" style="letter-spacing:0.10698741409214843em">T</tspan>
-						<tspan x="189.77" y="0">ING CARDS</tspan>
-						<tspan x="196.26" y="43.87">ARE</tspan>
-						<tspan style="letter-spacing:0.04699730116127445em">
-							<tspan x="63.56" y="87.74">UNDERR</tspan>
-							<tspan x="295.32" y="87.74" style="letter-spacing:-0.0329837491860739em">A</tspan>
-							<tspan x="330.83" y="87.74">TED</tspan>
-						</tspan>
-					</text>
-				</svg> -->
-			</div>
+			<a href="#anchor"><img class="logo" id="img" onmouseover="this.src='./IMAGENES/GREETING-CARDS-final-02.png'" onmouseout="this.src='./IMAGENES/GREETING-CARDS-final-01.png'" src="./IMAGENES/GREETING-CARDS-final-01.png'"></a>
 		</section>
 		<!-- End Vector Logo -->
 	</header>
 	<div class="sender-receiver">
-		<input class="sender" name="sender" type="text">
-		<input class="receiver" name="receiver" type="text">
-		<p>click a flying cat</p>
+		<input class="sender" name="sender" type="text" placeholder="SENDER">
+		<input class="receiver" name="receiver" type="text" placeholder="RECEIVER">
+		<p class="click-a-flying-cat">click a flying cat</p>
 	</div>
 		<div class="conejitos">
-			<img src="imagenes/close-button.png" class="close-button imagenes-centrar" alt="">
+			<img src="./IMAGENES/close-button.png" class="close-button imagenes-centrar" alt="">
 			<img src="" class="img-random imagenes-centrar" alt="">
 		</div>
 	<!-- Good llustration -->
 	<section class="container-cards">
-		<div class="good-illustration">
+		<div id="anchor" class="good-illustration">
 			<!-- Inputs sender receiver -->
 			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 1022">
 				<defs>
@@ -674,7 +655,7 @@
 		<div class="good-illustration-mobile">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1242 2208">
 			<title>SVG-PHONE-RESPONSIVE</title>
-			<g class="gato">
+			<g class="gato1">
 				<path
 					d="M1121.6,1528.59c-15.54,8.69-37.91.18-40.89-16.11-1-5.63,1.88-12,2.79-18,.37-2.46,1-5.32.16-7.44-3.53-8.75-3.36-17.42-1.19-26.4.86-3.59.73-7.46.79-11.2.06-4-.54-8.07-.21-12,.38-4.44,3.2-6.48,7.68-5.33,2.1.54,4.49,1.11,6,2.48,4.75,4.26,9.68,4.89,15.39,2.26a14.56,14.56,0,0,1,5.91-1.06c9.26,0,17.83-.44,25.43-7.74,5.41-5.21,11-2.35,11.76,5.37.85,8.63,2.83,16.45,7.33,24.08,4.06,6.9,3.8,15.08,2.39,23a16.08,16.08,0,0,0,.73,6.7c1.38,5.09,3.68,10,4.46,15.16,1.79,12-4.61,22.55-15.79,27.25C1142.16,1534.77,1129.54,1534.43,1121.6,1528.59Zm-16.39-85.33c-2.54-2-4.5-4.11-6.91-5.25-3.51-1.64-7.36-2.57-11.06-3.8-.73,3.76-2.55,7.7-2,11.24,1.17,7.1-.21,13.63-1.58,20.45-3.48,17.45,5.39,31.84,22.4,36.88,12.4,3.68,24.71,2.62,36.66-1.92,18.27-6.94,26.19-24.14,18-41.86-3.85-8.37-7.08-16.35-7.77-25.59-.43-5.84-3.76-7.07-8.82-3.68-4.07,2.73-7.61,6.25-11.45,9.47C1126.06,1435.42,1109,1437.7,1105.21,1443.26Zm59.07,44-1.74.24c-11.64,21.2-55.75,28.06-76.55,4.83-1.44,5.81-3.14,10.77-3.81,15.87-.93,7.06,1.37,13.32,7.93,16.78,7.58,4,15.89,5.89,24.42,4.21,2.36-.46,5.71-3.13,5.94-5.1s-2.23-5.38-4.39-6.59c-3.43-1.91-7.69-2.26-11.4-3.77-3-1.21-5.69-3.15-8.53-4.77l.72-1.14,26.2,10.67,26.6-10c-1.18,3.88-5.1,5-8.71,6.25-4.31,1.48-9,2.06-13,4.06-2.14,1.07-4.85,4.8-4.36,6.45.68,2.28,4.18,5.28,6.41,5.23,7.59-.15,15.43-.54,22.66-2.63,10.23-3,16.22-12,15.57-22.67C1167.81,1499.14,1165.64,1493.22,1164.28,1487.26Z" />
 				<path
@@ -1247,7 +1228,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 	</script>
-	<script src="home.js"></script>
+	<script src="./JS/home.js"></script>
 </body>
 
 </html>
