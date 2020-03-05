@@ -43,6 +43,7 @@ body {
 
   .signup-form input {
     margin-top: 50px;
+    margin-bottom: 15px;
   }
 
   #login-form {
@@ -63,6 +64,7 @@ body {
    border-style: none;
    border-bottom: 1px solid white;
    font-family: Josefin Sans;
+   margin-bottom: 30px;
  }
 
   #name {

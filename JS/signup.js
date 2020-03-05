@@ -22,6 +22,10 @@ signUpButton.addEventListener("click", function(event){
     if (checkValidUser()){
         console.log("user registered")
         createUser(userName.value, email.value, password.value)
+        let userRegistered = document.createElement('div');
+        userRegistered.innerHTML = `<p class="info-text" href="../HTML/archive.html"> Hello ${userName.value}! <a class="info-text" href="../HTML/archive.html"> You can now acccess our GREETING CARDS archive!</a></p>`
+        form.insertBefore(userRegistered, signUpButton);
+        signUpButton.remove()
     };
 })
 
