@@ -22,6 +22,10 @@ signUpButton.addEventListener("click", function(event){
     if (checkValidUser()){
         console.log("user registered")
         createUser(userName.value, email.value, password.value)
+        let userRegistered = document.createElement('div');
+        userRegistered.innerHTML = `<p class="info-text"> Hello ${userName.value}! You can now tell people to fuck off with a card!</p>`
+        form.insertBefore(userRegistered, signUpButton);
+        signUpButton.remove()
     };
 })
 

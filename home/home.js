@@ -48,6 +48,7 @@ function getValues() {
     console.log('***********', finalReceiver, finalSender);
 }
 
+let testFrase = null;
 //random frase
 var getFrase = async () => {
     getValues();
@@ -55,9 +56,16 @@ var getFrase = async () => {
     receiver.value = ''
     var getFraseRaw = arrayOfFrases[Math.floor(Math.random() * lengthArray)];
     console.log(getFraseRaw);
+    if(testFrase === null) {
+        console.log('createdp')
+        testFrase = document.createElement('p');
+    } else {
+        console.log('deletedp')
+        testFrase.remove()
+    }
     allConejos.forEach(conejo => {
-        let testFrase = document.createElement('p');
         testFrase.classList.add('frase-tag-p');
+        testFrase.innerText = '';
         testFrase.innerText = getFraseRaw;
         conejo.appendChild(testFrase);
         console.log(conejo)
