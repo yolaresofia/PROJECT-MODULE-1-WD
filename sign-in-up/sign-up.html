@@ -13,30 +13,56 @@
 </head>
 
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light justify-content-lg-around bg-transparent">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav style="width: 1200px;" id="navbarnav" class="navbar mx-auto fixed-bottom navbar-expand-md navbar-light bg-transparent">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <ul class="navbar-nav mt-2 mt-lg-0 col-lg-12 justify-content-around">
-            <li class="nav-item">
-                <a class="nav-link" href="/about/about.html">ABOUT</a>
+        <!-- Es el dropdown que sale al clickar en expandir -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item mx-5 px-5">
+              <a class="nav-link" href="/about/about.html">
+                ABOUT
+              </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/archive/archive.html">ARCHIVE</a>
+            <li class="nav-item mx-5 px-5">
+              <a class="nav-link" href="/archive/archive.html">ARCHIVE</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    SIGN
-                </a>
-                <div class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="sign-up.html">UP</a>
-                    <a class="dropdown-item" href="log-in.html">IN</a>
-                </div>
+            <li class="nav-item mx-5 px-5">
+              <a class="nav-link" href="sign-up.html">
+                SIGN UP
+              </a>
             </li>
-        </ul>
-    </nav>
+            <li class="nav-item mx-5 px-5">
+              <a class="nav-link" href="log-in.html">LOG IN</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+</header>
+<main class="main-forms">
+    <section class="contenedor">
+
+      <h2>LOG IN</h2>
+        <p class="subtitle">TO ACCESS THE ARCHIVE</p>
+      <div class="form-wrapper">
+        <form action="" id="login-form">
+            <input type="text" id="name" placeholder="NAME" autocomplete="off" required />
+          <input type="password" id="password" placeholder="******" />
+
+          <button type="submit" class="button" id="log-in-button">LOG THE FUCK IN</button>
+        </form>
+        <div class="errors-container"></div>
+      </div>
+
     <main class="main-forms">
           <h2>SIGN UP</h2>
             <p class="subtitle">ACCES THE ARCHIVE AND GET A WEEKLY CARD</p>
@@ -53,6 +79,7 @@
     
             <div class="errors-container"></div>
           </div>
+    </nav>
       </main>
       
 

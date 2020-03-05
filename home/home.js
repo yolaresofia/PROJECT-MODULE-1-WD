@@ -10,7 +10,7 @@ var closeButton = document.querySelector('.close-button');
 var randomImg = document.querySelector('.img-random');
 let finalReceiver, finalSender, arrayOfFrases, lengthArray;
 let inp = document.querySelectorAll('input');
-
+var randomImg2 = document.querySelector('.img-random2');
 let allConejos = [...conejo];
 
 
@@ -71,8 +71,9 @@ var getFrase = async () => {
 var gato1 = document.getElementsByClassName('gato1')[0];
 gato1.onclick = showImg
 function showImg() {
-    randomImg.style.display = 'inline';
+    randomImg2.style.display = 'inline';
     closeButton.style.display = 'inline';
+    console.log("click en gato1");
 }
 
 //onclick me da la frase
