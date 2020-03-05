@@ -58,6 +58,7 @@ var getFrase = async () => {
     if(testFrase === null) {
         console.log('createdp')
         testFrase = document.createElement('p');
+        testFrase.style.display = 'inline';
     } else {
         console.log('deletedp')
         testFrase.remove()
@@ -96,7 +97,7 @@ function hideElements() {
     randomImg.style.display = 'none';
     closeButton.style.display = 'none';
     for (i = 0; i < allp.length; i++) {
-        allp[i].style.display = 'none';
+        allp[i].remove();
     }
 }
 
