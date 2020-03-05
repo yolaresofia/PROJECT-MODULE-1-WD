@@ -9,7 +9,9 @@ html {
     scroll-behavior: smooth;
   }
 
+.good-illustration {
 
+}
 
 
 /*logo*/
@@ -40,13 +42,6 @@ html {
     border-bottom: 1px solid white;
 }
 
-.receiver {
-    margin-right: 20px;
-    border: none;
-    background-color: pink;
-    border-bottom: 1px solid white;
-}
-
 .click-a-flying-cat {
     font-family: Josefin Sans;
     color: white;
@@ -59,14 +54,14 @@ p {
 }
 
 .img-random {
-    width: 40%;
+    width: 37%;
     left: 30%;
     display: none;
 }
 
 .close-button {
     width: 3%;
-    left: 67%;
+    left: 64%;
     z-index: 15;
     display: none;
 }
@@ -104,13 +99,17 @@ p {
 
 p.frase-tag-p {
     display: inline;
-    text-align: center;
+    text-align: justify;
     font-size: 2em;
     height: auto;
     width: 200px;
     position: absolute;
-    left: 42%;
+    left: 40%;
     top: 250px;
+}
+
+#senderid {
+    width: 12%;
 }
 
 
@@ -140,12 +139,14 @@ a .logo-gcau {
 }
 
 #about {
-    margin-top: 5%;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 30%;
+    margin-right: 30%;
     margin-bottom: 100%;
     text-align: center;
-    line-height: 150%;
+    line-height: 40px;
+    font-family: Josefin Sans;
+    font-size: 1.5em;
+
 }
 
 /*end about*/
@@ -174,6 +175,18 @@ a .logo-gcau {
 
 @media only screen and (max-width: 600px) {
 
+    .logo {
+        display: none;
+    }
+
+    .logo-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+     }
+
     .good-illustration {
         display: none;
     }
@@ -183,14 +196,14 @@ a .logo-gcau {
     }
 
     .img-random {
-        width: 60%;
+        width: 50%;
         left: 20%;
         margin-top: 25%;
     }
 
     .close-button {
         width: 3%;
-        left: 77%;
+        left: 67%;
         z-index: 15;
         display: none;
         margin-top: 25%;
@@ -202,8 +215,25 @@ a .logo-gcau {
 
     p.frase-tag-p {
         width: 40%;
-        left: 30%;
+        left: 27%;
         font-size: 1.2em;
+        top: 250px;
+    }
+
+    .sender-receiver {
+        margin-left: 3%;
+        align-items: center;
+        justify-content: center;
+        max-width: 300px;
+        font-size: 0.7em;
+    }
+
+    .sender {
+        margin-right: 8px;
+    }
+
+    #senderid {
+        width: 30%;
     }
 }
 

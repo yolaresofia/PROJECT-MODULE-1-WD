@@ -1,9 +1,5 @@
 var frase = document.getElementById('frase');
-var receiver = document.querySelector('.receiver');
 var sender = document.querySelector('.sender');
-var arrOne = ['asshole', 'awesome', 'bag', 'because', 'bucket', 'bye', 'cool', 'cup', 'diabetes', 'even', 'anyone', 'anything', 'family', 'fascinating', 'flying', 'give', 'holygrail', 'horse', 'idea', 'immensity', 'jinglebells', 'life', 'logs', 'looking', 'maybe', 'me', 'mornin', 'no', 'pink', 'programmer', 'question', 'shit', 'single', 'thanks', 'that', 'this', 'too', 'what', 'zero'];
-var arrOnePos = Math.floor(Math.random() * arrOne.length);
-var randomPos = arrOne[arrOnePos];
 var gato = document.querySelectorAll('.gato');
 var conejo = document.querySelectorAll('.conejitos');
 var closeButton = document.querySelector('.close-button');
@@ -40,43 +36,36 @@ let allConejos = [...conejo];
 //     console.log(getFraseRaw.message + ' ' + getFraseRaw.subtitle);
 // };
 
-function getValues() {
-    finalReceiver = receiver.value
-    finalSender = sender.value
-    arrayOfFrases = [`Fuck you, asshole. -${finalSender}`, `This is Fucking Awesome. -${finalSender}`, `${finalReceiver} back the fuck off. -${finalSender}`, `Happy fucking birthday, ${finalReceiver} -${finalSender}`, `Why? Because Fuck you, that's why. -${sender.value}`, `How about a nice cup of shut the fuck up? -${finalSender}`, `Everyone can go and fuck off. -${finalSender}`];
-    lengthArray = arrayOfFrases.length - 1;
-}
-
 let testFrase = null;
-//random frase
-var getFrase = async () => {
-    getValues();
-    sender.value = '';
-    receiver.value = ''
-    var getFraseRaw = arrayOfFrases[Math.floor(Math.random() * lengthArray)];
-    console.log(getFraseRaw);
+// //MUY IMPORTANTE FUNCION REAL LPM
+function getFrase(){
+    var arrOne = ['asshole', 'awesome', 'bag', 'because', 'bucket', 'bye', 'cool', 'cup', 'diabetes', 'even', 'anyone', 'anything', 'family', 'fascinating', 'flying', 'give', 'holygrail', 'horse', 'idea', 'immensity', 'jinglebells', 'life', 'logs', 'looking', 'maybe', 'me', 'mornin', 'no', 'pink', 'programmer', 'question', 'shit', 'single', 'thanks', 'that', 'this', 'too', 'what', 'zero'];
+    var arrOnePos = Math.floor(Math.random() * arrOne.length);
+    var randomPos = arrOne[arrOnePos];
     if(testFrase === null) {
-        console.log('createdp')
         testFrase = document.createElement('p');
         testFrase.style.display = 'inline';
     } else {
-        console.log('deletedp')
         testFrase.remove()
     }
-    allConejos.forEach(conejo => {
+    fetch(`https://www.foaas.com/${randomPos}/${sender.value}/`, {
+        headers: {
+            Accept: 'application/json'
+        }
+    })
+    .then(response => response.json())
+    .then(data => allConejos.forEach(conejo => {
         testFrase.classList.add('frase-tag-p');
-        testFrase.innerText = '';
-        testFrase.innerText = getFraseRaw;
+        data.message += " -" + sender.value;
+        testFrase.innerText = data.message;
         conejo.appendChild(testFrase);
-        console.log(conejo)
         let randomNum = Math.floor(Math.random() * 6 + 1);
         randomImg.src = `imagenes/fotos-de-tarjetas-0${randomNum}.png`
         randomImg.style.display = 'inline';
         closeButton.style.display = 'inline';
-    });
-    return getFraseRaw;
-};
-
+        document.getElementById('senderid').value = "";
+    }))
+}
 
 //onclick me da la frase
 [...gato].forEach(function (element) {
