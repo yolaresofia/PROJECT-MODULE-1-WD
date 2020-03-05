@@ -102,3 +102,4 @@ function hideElements() {
 }
 
 closeButton.addEventListener('click', hideElements);
+

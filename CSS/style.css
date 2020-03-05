@@ -9,18 +9,20 @@
 
 
 /*logo*/
-.logo-en-svg {
-    background: url('../about/GREETING-CARDS.png') no-repeat;
-    background-size: cover;
-    height: 300px;
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
     margin: 0 auto;
-    width: 70%;
 }
 
-.logo-en-svg:hover {
-    background: url('./get-a-random-desktop-02.png') no-repeat;
+/* .logo:hover {
+    background: url('./imagenes/GREETING-CARDS-final-02.png') no-repeat;
     background-size: cover;
-}
+} */
+
+
 
 /* .gato {
     animation:rotate 20s linear alternate-reverse infinite; 
