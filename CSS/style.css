@@ -44,13 +44,16 @@
 }
 
 .receiver {
-    margin-right: 50px;
+    margin-right: 20px;
     border: none;
     background-color: pink;
     border-bottom: 1px solid white;
 }
 
-
+.click-a-flying-cat {
+    font-family: Josefin Sans;
+    color: white;
+}
 
 p {
     margin-bottom: 0px;
@@ -61,13 +64,13 @@ p {
 .img-random {
     width: 40%;
     left: 30%;
-    display: none; 
+    display: none;
 }
 
 .close-button {
     width: 3%;
     left: 67%;
-    z-index:15;
+    z-index: 15;
     display: none;
 }
 
@@ -76,6 +79,7 @@ p {
     position: absolute;
     top: 50px;
 }
+
 .img-random2 {
     width: 250px;
     position: absolute;
@@ -110,11 +114,11 @@ p.frase-tag-p {
     position: absolute;
     left: 42%;
     top: 250px;
-} 
+}
 
 
 
- .good-illustration-mobile{
+.good-illustration-mobile {
     display: none;
 }
 
@@ -153,6 +157,7 @@ a .logo-gcau {
 .archive-body {
     background-color: pink;
 }
+
 .container-imagenes {
     display: flex;
     align-items: center;
@@ -162,38 +167,49 @@ a .logo-gcau {
 }
 
 .imagen {
-   margin-top: 50px;
-   margin-left: 5%;
-   margin-right: 5%;
-   max-width: 300px;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 300px;
 }
 
 /*archive*/
 
-    @media only screen and (max-width: 600px){           
-     
-        .good-illustration{
-          display: none;
-        }
-     
-        .good-illustration-mobile {
-          display: block;
-        }
+@media only screen and (max-width: 600px) {
 
-        .img-random {
-            width: 60%;
-            left: 20%
+    .good-illustration {
+        display: none;
+    }
+
+    .good-illustration-mobile {
+        display: block;
+    }
+
+    .img-random {
+        width: 60%;
+        left: 20%
             /* display: none; */
-        }
-        .close-button {
-            width: 3%;
-            left: 77%;
-            z-index:15;
-            display: none;
-        }
+    }
 
-        a .logo-gcau {
-            width: 50vh;
-        }
-     } 
-    
+    .close-button {
+        width: 3%;
+        left: 77%;
+        z-index: 15;
+        display: none;
+    }
+
+    a .logo-gcau {
+        width: 50vh;
+    }
+}
+
+::placeholder {
+    font-family: Josefin Sans;
+    color: white;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
