@@ -122,11 +122,12 @@ p.frase-tag-p {
 
 .about-GCAU {
     background-color: rgb(57, 255, 20);
+    margin-top: 0px;
 }
 
 a .logo-gcau {
-    margin-top: 10%;
-    width: 40%;
+    width: 70vh;
+    margin-bottom: 0px;
 }
 
 
@@ -189,6 +190,10 @@ a .logo-gcau {
             left: 77%;
             z-index:15;
             display: none;
+        }
+
+        a .logo-gcau {
+            width: 50vh;
         }
      } 
     
