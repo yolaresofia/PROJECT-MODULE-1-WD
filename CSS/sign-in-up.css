@@ -102,3 +102,24 @@ body {
 
   input:focus, textarea:focus, select:focus{
     outline: none;}
+
+    @media only screen and (max-width: 600px) {
+      h2{
+        margin-top: 50px;
+        font-size: 1.5em;
+      }
+    
+      .subtitle {
+       font-size: 0.7em;
+      }
+    
+      p {
+        font-family: Josefin Sans;
+        margin-top: 5px;
+      }
+
+      .signup-form input {
+        margin-top: 25px;
+        margin-bottom: 7px;
+      }
+    }

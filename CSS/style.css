@@ -23,11 +23,11 @@ html {
     margin: 0 auto;
 }
 
-/* .gato {
+.gato {
     animation:rotate 20s linear alternate-reverse infinite; 
         stroke: red;
 }
-@keyframes rotate { 100% { transform:scaleY(0.4); } } */
+@keyframes rotate { 100% { transform:scaleY(0.4); } }
 
 /*main content*/
 .sender-receiver {
@@ -54,14 +54,14 @@ p {
 }
 
 .img-random {
-    width: 37%;
+    width: 33%;
     left: 30%;
     display: none;
 }
 
 .close-button {
     width: 3%;
-    left: 64%;
+    left: 60%;
     z-index: 15;
     display: none;
 }
@@ -70,14 +70,6 @@ p {
     height: auto;
     position: absolute;
     top: 50px;
-}
-
-.img-random2 {
-    width: 250px;
-    position: absolute;
-    top: 130px;
-    left: 35px;
-    display: none;
 }
 
 .close-button2 {
@@ -98,14 +90,13 @@ p {
 
 
 p.frase-tag-p {
-    display: inline;
     text-align: justify;
-    font-size: 2em;
+    font-size: 30px;
     height: auto;
     width: 200px;
     position: absolute;
-    left: 40%;
-    top: 250px;
+    left: 38%;
+    top: 180px;
 }
 
 #senderid {
