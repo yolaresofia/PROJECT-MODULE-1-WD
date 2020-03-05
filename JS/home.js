@@ -77,13 +77,6 @@ var getFrase = async () => {
     return getFraseRaw;
 };
 
-var gato1 = document.getElementsByClassName('gato1')[0];
-gato1.onclick = showImg
-function showImg() {
-    randomImg2.style.display = 'inline';
-    closeButton.style.display = 'inline';
-    console.log("click en gato1");
-}
 
 //onclick me da la frase
 [...gato].forEach(function (element) {
@@ -96,7 +89,7 @@ var allp = document.getElementsByTagName("p");
 function hideElements() {
     randomImg.style.display = 'none';
     closeButton.style.display = 'none';
-    for (i = 0; i < allp.length; i++) {
+    for (i = 1; i < allp.length; i++) {
         allp[i].remove();
     }
 }

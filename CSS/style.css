@@ -5,6 +5,10 @@
     background-color: pink;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 
 
 
@@ -16,13 +20,6 @@
     width: 100vw;
     margin: 0 auto;
 }
-
-/* .logo:hover {
-    background: url('./imagenes/GREETING-CARDS-final-02.png') no-repeat;
-    background-size: cover;
-} */
-
-
 
 /* .gato {
     animation:rotate 20s linear alternate-reverse infinite; 
@@ -187,8 +184,8 @@ a .logo-gcau {
 
     .img-random {
         width: 60%;
-        left: 20%
-            /* display: none; */
+        left: 20%;
+        margin-top: 25%;
     }
 
     .close-button {
@@ -196,10 +193,17 @@ a .logo-gcau {
         left: 77%;
         z-index: 15;
         display: none;
+        margin-top: 25%;
     }
 
     a .logo-gcau {
         width: 50vh;
+    }
+
+    p.frase-tag-p {
+        width: 40%;
+        left: 30%;
+        font-size: 1.2em;
     }
 }
 
