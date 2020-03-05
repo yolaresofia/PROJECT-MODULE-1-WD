@@ -15,34 +15,48 @@
 <body id="body">
 	<header>
 		<!--navbar-->
-		<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light justify-content-lg-around bg-transparent">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-				aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<ul class="navbar-nav mt-2 mt-lg-0 col-lg-12 justify-content-around">
-				<li class="nav-item">
-					<a class="nav-link" href="../about/about.html">ABOUT</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="../archive/archive.html">ARCHIVE</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						SIGN
-					</a>
-					<div class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="/sign-in-up/sign-up.html">UP</a>
-						<a class="dropdown-item" href="/sign-in-up/log-in.html">IN</a>
-					</div>
-				</li>
-			</ul>
-
-		</nav>
+		<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Es el dropdown que sale al clickar en expandir -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item mx-5 px-5">
+                  <a class="nav-link" href="../home/index.html">
+                    HOME
+                  </a>
+                </li>
+                <li class="nav-item mx-5 px-4">
+                  <a class="nav-link" href="../about/about.html">
+                    ABOUT
+                  </a>
+                </li>
+                <li class="nav-item mx-5 px-4">
+                  <a class="nav-link" href="../archive/archive.html">ARCHIVE</a>
+                </li>
+                <li class="nav-item mx-5 px-4">
+                  <a class="nav-link" href="/sign-in-up/sign-up.html">
+                    SIGN UP
+                  </a>
+                </li>
+                <li class="nav-item mx-5 px-4">
+                  <a class="nav-link" href="/sign-in-up/log-in.html">LOG IN</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
 		<section>
-			<div>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 597.14 381.43">
+			<div class="logo-en-svg">
+				<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 597.14 381.43">
 					<title>Untitled-2</title><text transform="translate(50.85 146.13)"
 						style="font-size:51.47450637817383px;fill:#fff;font-family:BigCaslon-Medium, Big Caslon">GREETING
 						CARDS<tspan x="195.01" y="43.87">ARE</tspan>
@@ -58,11 +72,20 @@
 							<tspan x="330.83" y="87.74">TED</tspan>
 						</tspan>
 					</text>
-				</svg>
+				</svg> -->
 			</div>
 		</section>
 		<!-- End Vector Logo -->
 	</header>
+	<div class="sender-receiver">
+		<input class="sender" name="sender" type="text">
+		<input class="receiver" name="receiver" type="text">
+		<p>click a flying cat</p>
+	</div>
+		<div class="conejitos">
+			<img src="imagenes/close-button.png" class="close-button imagenes-centrar" alt="">
+			<img src="" class="img-random imagenes-centrar" alt="">
+		</div>
 	<!-- Good llustration -->
 
 	<section class="container-cards">
@@ -73,10 +96,6 @@
 		</div>
 		<div class="good-illustration">
 			<!-- Inputs sender receiver -->
-			<div class="conejitos">
-				<img src="imagenes/close-button.png" class="close-button imagenes-centrar" alt="">
-				<img src="imagenes/fotos-de-tarjetas-01.png" class="img-random imagenes-centrar" alt="">
-			</div>
 			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1600 1022">
 				<defs>
 					<clipPath id="a">
@@ -658,10 +677,13 @@
 	<!-- Good llustration Mobile -->
 	<section class="container-cards">
 		<div class="good-illustration-mobile">
+<<<<<<< HEAD
 		<div class="conejitos divisor-ilustracion-mobil">
 			<img src="imagenes/close-button.png" class="close-button2 imagenes-centrar" alt="">
 			<img src="imagenes/fotos-de-tarjetas-01.png" class="img-random2 imagenes-centrar col-lg-4 col-md-8 col-sm-8 col-10 " alt="">
 		</div>
+=======
+>>>>>>> refactor
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1242 2208">
 			<title>SVG-PHONE-RESPONSIVE</title>
 			<g class="gato1">

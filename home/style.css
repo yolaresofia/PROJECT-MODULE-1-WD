@@ -8,6 +8,20 @@
 
 
 
+/*logo*/
+.logo-en-svg {
+    background: url('../about/GREETING-CARDS.png') no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.logo-en-svg:hover {
+    background: url('./get-a-random-desktop-02.png') no-repeat;
+    background-size: cover;
+}
+
 /* .gato {
     animation:rotate 20s linear alternate-reverse infinite; 
         stroke: red;
@@ -97,11 +111,9 @@ p.frase-tag-p {
 
 
 
-
-
  .good-illustration-mobile{
     display: none;
- }
+}
 
 /*about*/
 
@@ -162,6 +174,18 @@ a .logo-gcau {
      
         .good-illustration-mobile {
           display: block;
+        }
+
+        .img-random {
+            width: 60%;
+            left: 20%
+            /* display: none; */
+        }
+        .close-button {
+            width: 3%;
+            left: 77%;
+            z-index:15;
+            display: none;
         }
      } 
     
