@@ -269,14 +269,9 @@ p.frase-tag-p {
 }
 
 a .logo-gcau {
-    width: 70vh;
+    width: 90vh;
     margin-bottom: 0px;
 }
-
-.good-illustration {
-
-}
-
 
 .cajita {
     display: flex;
@@ -285,19 +280,38 @@ a .logo-gcau {
     justify-content: center;
 }
 
-#about {
+.about {
     margin-left: 30%;
     margin-right: 30%;
     margin-bottom: 100%;
     text-align: center;
     line-height: 40px;
     font-family: Josefin Sans;
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 1.5em;
     color: black;
     text-shadow: 2px 2px white;
     text-shadow: 4px 4px white;
 }
+.glow {
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red;
+    }
+  }
+
+
 
 /*end about*/
 /*archive*/
@@ -385,6 +399,13 @@ a .logo-gcau {
     #senderid {
         width: 30%;
     }
+
+ #logo1 {
+    width:90%;
+    margin-left: 5%;
+    margin-top: 30%;
+    margin-bottom: 30%;
+ }
 }
 
 ::placeholder {

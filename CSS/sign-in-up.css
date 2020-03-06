@@ -10,11 +10,11 @@ body {
     margin-top: 70px;
     font-family: Josefin Sans;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   .subtitle {
-   font-size: 1.3em;
+   font-size: 1em;
   }
 
   p {
@@ -94,6 +94,24 @@ body {
     border-bottom: 1px solid white;
     background-color: pink;
     padding: 0;
+  }
+  
+  .glow {
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red;
+    }
   }
 
   ::placeholder {

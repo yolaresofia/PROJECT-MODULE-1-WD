@@ -38,7 +38,7 @@ function getFrase(){
         testFrase.style.fontFamily = arrayOfFonts[random(arrayOfFonts)]
         conejo.appendChild(testFrase);
         let randomNum = Math.floor(Math.random() * 6 + 1);
-        randomImg.src = `imagenes/fotos-de-tarjetas-0${randomNum}.png`
+        randomImg.src = `./IMAGENES/fotos-de-tarjetas-0${randomNum}.jpg`
         randomImg.style.display = 'inline';
         closeButton.style.display = 'inline';
         document.getElementById('senderid').value = "";
