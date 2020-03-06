@@ -13,6 +13,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10%;
  }
 
  #logo1 {
@@ -292,7 +293,10 @@ a .logo-gcau {
     line-height: 40px;
     font-family: Josefin Sans;
     font-size: 1.5em;
-    text-shadow: 2px 2px red;
+    line-height: 1.5em;
+    color: black;
+    text-shadow: 2px 2px white;
+    text-shadow: 4px 4px white;
 }
 
 /*end about*/
