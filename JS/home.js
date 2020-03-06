@@ -66,3 +66,14 @@ function hideElements() {
 
 closeButton.addEventListener('click', hideElements);
 
+
+let photo = document.getElementById('logo1');
+photo.onmouseover = change;
+photo.onmouseout = changeAgain;
+function change(){
+    console.log('algo');
+  photo.src ="./IMAGENES/GREETING-CARDS-final-02.png"
+}
+function changeAgain(){
+  photo.src ="./IMAGENES/GREETING-CARDS-final-01.png"
+}
