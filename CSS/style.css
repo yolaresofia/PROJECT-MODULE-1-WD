@@ -245,7 +245,7 @@ p.frase-tag-p {
     width: 180px;
     position: absolute;
     left: 38%;
-    top: 180px;
+    top: 200px;
     color: white;
     line-height: 1em;
     text-shadow: 2px 2px black;
@@ -293,7 +293,7 @@ a .logo-gcau {
     text-shadow: 2px 2px white;
     text-shadow: 4px 4px white;
 }
-.glow {
+/* .glow {
     color: #fff;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -309,7 +309,7 @@ a .logo-gcau {
     to {
       text-shadow: 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red;
     }
-  }
+  } */
 
 
 
