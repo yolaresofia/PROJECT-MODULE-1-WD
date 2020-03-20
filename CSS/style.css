@@ -7,6 +7,53 @@
 html {
     scroll-behavior: smooth;
   }
+
+/*navbar*/
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+  }
+  
+  #chkToggle {
+    display: none;
+  }
+  
+  #chkToggle:checked + ul.main-nav {
+    display: block;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .navbar {
+        font-size: 1.5em;
+        font-family: Josefin Sans;
+      }
+    
+    .main-nav {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:hover 
+    {
+         color:rgb(255, 1, 234); 
+         text-decoration:none; 
+         cursor:pointer;  
+    }
+    
+  }
+
+
  /*logo*/
 
  .logos-hover {

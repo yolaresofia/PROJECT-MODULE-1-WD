@@ -5,8 +5,40 @@ body {
     background: pink;
     color: #fff;
   }
+
+  /*navbar*/
+
+.navbar {
+  font-size: 1.3em;
+  font-family: Josefin Sans;
+}
+
+.main-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navlinks {
+
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover 
+{
+   color:rgb(255, 1, 234); 
+   text-decoration:none; 
+   cursor:pointer;  
+}
+
+
+/*logo*/
   
-  h2{
+#h2{
     margin-top: 70px;
     font-family: Josefin Sans;
     text-align: center;
@@ -96,7 +128,7 @@ body {
     padding: 0;
   }
   
-  .glow {
+  /* .glow {
     color: #fff;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -112,7 +144,7 @@ body {
     to {
       text-shadow: 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red;
     }
-  }
+  } */
 
   ::placeholder {
     font-family: Josefin Sans;
